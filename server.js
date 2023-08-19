@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose= require("mongoose")
 const app = express();
-const uri = 'mongodb+srv://test123:<password>@test.njvkj.mongodb.net/?retryWrites=true&w=majority'
+const uri = 'mongodb+srv://test123:test123@test.njvkj.mongodb.net/?retryWrites=true&w=majority'
 mongoose.connect(uri,{useNewUrlParser:true,useUnifiedTopology:true})
 const con =mongoose.connection
 con.on('open' , function(){
