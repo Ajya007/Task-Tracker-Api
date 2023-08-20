@@ -9,7 +9,7 @@ const taskSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    reminder:{
+    completion:{
         type:Boolean,
         required:true,
         default:false
